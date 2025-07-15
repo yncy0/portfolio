@@ -1,5 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import SectionHero from './components/SectionHero.vue'
+import SectionMain from './components/SectionMain.vue'
 
-<template></template>
+</script>
+
+<template>
+  <main>
+    <SectionHero />
+    <SectionMain />
+  </main>
+</template>
 
 <style scoped></style>
