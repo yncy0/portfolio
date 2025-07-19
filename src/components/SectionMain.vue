@@ -8,8 +8,8 @@ import { Button } from './ui/button';
 </script>
 
 <template>
-  <section class="flex flex-row min-h-dvh pt-10">
-    <section class="flex flex-col w-[50%]">
+  <section class="flex flex-row min-h-dvh pt-20">
+    <section class="flex flex-col w-[50%] gap-5">
       <AboutMe />
       <AppHeader />
 

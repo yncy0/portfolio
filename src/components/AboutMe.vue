@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Badge } from '@/components/ui/badge'
 </script>
 
 <template>
@@ -9,13 +8,9 @@ import { Badge } from '@/components/ui/badge'
       Hello there! My name is Yancy. A front-end developer that focuses on building and
       collaboration among front-end projects specially Vue/Nuxt. <br />
 
-      Driven by curiosity, I also venture into other technologies when I take a break doing front-end
-      stuff such as back-end development, game development, and the Linux technology. <br />
+      Driven by curiosity, I also venture into other technologies when I take a break doing
+      front-end stuff such as back-end development, game development, and the Linux technology.
+      <br />
     </p>
-    <div>
-      <Badge>Fron-end Developer</Badge>
-      <Badge>Vue/Nuxt Developer</Badge>
-      <Badge>React Native Developer</Badge>
-    </div>
   </div>
-</template>
+  </template>
