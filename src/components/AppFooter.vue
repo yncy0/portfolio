@@ -3,7 +3,7 @@ import SocialsList from './SocialsList.vue';
 </script>
 
 <template>
-  <footer>
+  <footer class="flex flex-col gap-2 py-5">
     <SocialsList />
     <p>
       Hardcoded by Yncy0 <br />

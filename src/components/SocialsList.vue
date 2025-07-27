@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { GitHubIcon, GmailIcon} from 'vue3-simple-icons';
+import { GitHubIcon, GmailIcon, XIcon} from 'vue3-simple-icons'
 </script>
 
 <!-- FIXME: bad design -->
 <template>
-  <ul class="flex flex-row gap-2">
+  <ul class="flex flex-row gap-4">
     <li>
       <a href="https://github.com/Yncy0">
         <GitHubIcon />
@@ -13,6 +13,11 @@ import { GitHubIcon, GmailIcon} from 'vue3-simple-icons';
     <li>
       <a href="mailto:yncyncy0@gmail.com">
         <GmailIcon />
+      </a>
+    </li>
+    <li>
+      <a href="https://x.com/yncynotdev">
+        <XIcon/>
       </a>
     </li>
   </ul>
