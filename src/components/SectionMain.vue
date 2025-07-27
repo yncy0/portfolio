@@ -2,7 +2,6 @@
 import AboutMe from './AboutMe.vue'
 import AppFooter from "./AppFooter.vue"
 import AppHeader from './AppHeader.vue';
-import SocialsList from './SocialsList.vue';
 
 import { Button } from './ui/button';
 </script>
@@ -14,7 +13,6 @@ import { Button } from './ui/button';
       <AppHeader />
 
       <Button>Hire me</Button>
-      <SocialsList />
       <AppFooter />
     </section>
   </section>
