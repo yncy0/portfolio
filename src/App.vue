@@ -5,7 +5,7 @@ import SectionMain from './components/SectionMain.vue'
 </script>
 
 <template>
-  <main>
+  <main class="flex flex-col items-start justify-center px-32">
     <SectionHero />
     <SectionMain />
   </main>
