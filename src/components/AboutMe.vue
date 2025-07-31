@@ -3,7 +3,7 @@
 
 <template>
   <div class="flex flex-col">
-    <h2>About me</h2>
+    <h2 class="text-xl">About me</h2>
     <p>
       Hello there! My name is Yancy. A front-end developer that focuses on building and
       collaboration among front-end projects specially Vue/Nuxt. <br />
