@@ -11,7 +11,7 @@ import {
   GitIcon,
   NeovimIcon,
 } from 'vue3-simple-icons'
-import { Card, CardContent } from './ui/card/Card.vue'
+
 import TechnologyIcon from './TechnologyIcon.vue'
 
 type Technologies = {
@@ -72,7 +72,7 @@ const technologies: Technologies[] = [
 <template>
   <section class="flex flex-col gap-2">
     <h2 class="text-xl">Technologies</h2>
-    <ul class="flex flex-row">
+    <ul class="flex flex-row gap-1">
       <li v-for="(item, index) in technologies" :key="index" class="flex-1">
         <TechnologyIcon :name="item.name" :description="item.description" :icon="item.icon"/>
       </li>
