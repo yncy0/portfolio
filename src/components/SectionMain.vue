@@ -3,6 +3,7 @@ import AboutMe from './AboutMe.vue'
 import EducationSection from './EducationSection.vue'
 import ExperienceList from './ExperienceList.vue'
 import ProjectsList from './ProjectsList.vue'
+import TechnologiesList from './TechnologiesList.vue'
 
 import { Button } from './ui/button'
 </script>
@@ -18,6 +19,7 @@ import { Button } from './ui/button'
       <ExperienceList />
       <ProjectsList />
       <EducationSection />
+      <TechnologiesList />
     </section>
   </section>
 </template>
