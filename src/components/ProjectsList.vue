@@ -21,7 +21,7 @@ const projects: Projects[] = [
 </script>
 
 <template>
-  <section class="flex flex-col gap-2">
+  <section id="projects" class="flex flex-col gap-2">
     <h2 class="text-xl">Projects</h2>
     <ul>
       <li v-for="(item, index) in projects" :key="index">
