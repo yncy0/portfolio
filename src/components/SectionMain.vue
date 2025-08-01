@@ -9,7 +9,7 @@ import { Button } from './ui/button'
 </script>
 
 <template>
-  <section class="flex flex-col min-h-dvh w-full max-w-screen pt-20 gap-28">
+  <section class="flex flex-col min-h-dvh w-full max-w-screen pt-20 gap-10">
     <section class="flex flex-col gap-5">
       <AboutMe />
       <Button>Hire me</Button>
@@ -18,8 +18,8 @@ import { Button } from './ui/button'
     <section class="flex flex-col gap-10">
       <ExperienceList />
       <ProjectsList />
-      <EducationSection />
       <TechnologiesList />
+      <EducationSection />
     </section>
   </section>
 </template>
