@@ -2,7 +2,8 @@
 import AboutMe from './AboutMe.vue'
 import AppFooter from './AppFooter.vue'
 import AppHeader from './AppHeader.vue'
-import Experiences from './Experiences.vue'
+import ExperienceList from './ExperienceList.vue'
+import ProjectsList from './ProjectsList.vue'
 
 import { Button } from './ui/button'
 </script>
@@ -17,7 +18,8 @@ import { Button } from './ui/button'
 
     <section class="flex flex-col w-[50%] gap-10">
       <AppHeader />
-      <Experiences />
+      <ExperienceList />
+      <ProjectsList />
     </section>
   </section>
 </template>
