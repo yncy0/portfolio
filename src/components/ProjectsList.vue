@@ -21,10 +21,16 @@ const projects: Projects[] = [
 </script>
 
 <template>
-  <h2 class="text-xl">Projects</h2>
-  <ul>
-    <li v-for="(item, index) in projects" :key="index">
-      <ProjectsCard :title="item.title" :description="item.desription" :github-url="item.githubUrl" />
-    </li>
-  </ul>
+  <section class="flex flex-col gap-2">
+    <h2 class="text-xl">Projects</h2>
+    <ul>
+      <li v-for="(item, index) in projects" :key="index">
+        <ProjectsCard
+          :title="item.title"
+          :description="item.desription"
+          :github-url="item.githubUrl"
+        />
+      </li>
+    </ul>
+  </section>
 </template>
