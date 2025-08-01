@@ -19,7 +19,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <Card class="bg-gruv-bg-500 shadow-none border-gruv-fg-500 border-2">
+  <Card class="bg-gruv-bg-500 shadow-none border-gruv-fg-500 border-2 text-gruv-fg-500">
     <CardHeader>
       <CardTitle>{{ props.title }}</CardTitle>
       <CardDescription>{{ props.description }}</CardDescription>
