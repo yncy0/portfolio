@@ -20,7 +20,7 @@ const education: Education[] = [
 </script>
 
 <template>
-  <section class="flex flex-col gap-2">
+  <section id="education" class="flex flex-col gap-2">
     <h2 class="text-xl">Education</h2>
     <ul>
       <li v-for="(item, index) in education" :key="index">
