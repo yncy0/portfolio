@@ -19,7 +19,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <Card class="bg-gruv-light-500 shadow-none border-gruv-dark-500 border-2">
+  <Card class="bg-gruv-bg-500 shadow-none border-gruv-fg-500 border-2 text-gruv-fg-500">
     <CardHeader>
       <CardTitle>{{ props.title }}</CardTitle>
       <CardDescription>{{ props.description }}</CardDescription>
@@ -29,7 +29,7 @@ const props = defineProps<{
       <a :href="props.githubUrl">{{ props.githubUrl }}</a>
     </CardContent>
     <CardFooter>
-      <Button>
+      <Button class="bg-gruv-fg-500 text-gruv-bg-500">
         <a :href="props.githubUrl">View Project</a>
       </Button>
     </CardFooter>

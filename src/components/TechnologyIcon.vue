@@ -10,7 +10,8 @@ const props = defineProps<{
 </script>
 
 <template>
-  <Card class="flex flex-col items-center bg-gruv-light-500 shadow-none border-gruv-dark-500 border-2">
+  <Card class="flex flex-col items-center bg-gruv-bg-500 shadow-none border-gruv-fg-500 border-2
+    text-gruv-fg-500">
     <CardContent class="flex flex-col items-center">
       <component :is="props.icon" />
       <h3>{{ props.name }}</h3>
