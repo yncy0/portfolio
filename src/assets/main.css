@@ -49,6 +49,49 @@
   --font-fira-sans: 'Fira Sans', sans-serif;
 }
 
+.dark {
+  --color-gruv-dark-hard: #1d2021;
+  --color-gruv-dark-soft: #32302f;
+  --color-gruv-dark-500: #282828;
+  --color-gruv-dark-600: #3c3836;
+  --color-gruv-dark-700: #504945;
+  --color-gruv-dark-800: #665c54;
+  --color-gruv-dark-900: #7c6f64;
+
+  --color-gruv-light-200: #fbf1c7;
+  --color-gruv-light-300: #ebdbb2;
+  --color-gruv-light-400: #d5c4a1;
+  --color-gruv-light-500: #bdae93;
+  --color-gruv-light-600: #a89984;
+
+  --color-gruv-red-500: #fb4934;
+  --color-gruv-red-600: #cc2412;
+
+  --color-gruv-green-500: #b8bb26;
+  --color-gruv-green-600: #98971a;
+
+  --color-gruv-yellow-500: #fabd2f;
+  --color-gruv-yellow-600: #d79921;
+
+  --color-gruv-blue-500: #83a598;
+  --color-gruv-blue-600: #458588;
+
+  --color-gruv-purple-500: #d3869b;
+  --color-gruv-purple-600: #b16286;
+
+  --color-gruv-aqua-500: #8ec07c;
+  --color-gruv-aqua-600: #689d6a;
+
+  --color-gruv-orange-500: #fe8019;
+  --color-gruv-orange-600: #d65d0e;
+
+  --color-gruv-gray-500: #928374;
+  --color-gruv-gray-600: #a89984;
+
+  --font-fira-code: 'Fira Code', monospace;
+  --font-fira-sans: 'Fira Sans', sans-serif;
+}
+
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
