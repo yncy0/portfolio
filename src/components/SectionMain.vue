@@ -12,7 +12,7 @@ import { Button } from './ui/button'
   <section class="flex flex-col min-h-dvh w-full max-w-screen pt-20 gap-10">
     <section class="flex flex-col gap-5">
       <AboutMe />
-      <Button>Hire me</Button>
+      <Button class="bg-gruv-fg-500 text-gruv-bg-500">Hire me</Button>
     </section>
 
     <section class="flex flex-col gap-10">
