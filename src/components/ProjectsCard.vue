@@ -11,7 +11,7 @@ import {
 
 const props = defineProps<{
   title: string
-  desription: string
+  description: string
   imageUrl?: string
   githubUrl?: string
   projectUrl?: string
@@ -22,7 +22,7 @@ const props = defineProps<{
   <Card class="bg-gruv-light-500 shadow-none border-gruv-dark-500 border-2">
     <CardHeader>
       <CardTitle>{{ props.title }}</CardTitle>
-      <CardDescription>{{ props.desription }}</CardDescription>
+      <CardDescription>{{ props.description }}</CardDescription>
     </CardHeader>
     <CardContent>
       <img :src="props.imageUrl" />
