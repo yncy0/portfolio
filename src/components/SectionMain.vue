@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import AboutMe from './AboutMe.vue'
+import EducationSection from './EducationSection.vue'
 import ExperienceList from './ExperienceList.vue'
 import ProjectsList from './ProjectsList.vue'
 
@@ -16,6 +17,7 @@ import { Button } from './ui/button'
     <section class="flex flex-col gap-10">
       <ExperienceList />
       <ProjectsList />
+      <EducationSection />
     </section>
   </section>
 </template>
