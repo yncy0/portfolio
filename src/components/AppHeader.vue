@@ -6,8 +6,8 @@ type Navigation = {
 const nav = <Navigation[]>[
   { title: 'Experiences', url: '#experiences' },
   { title: 'Projects', url: '#projects' },
-  { title: 'Education', url: '#tech_stack' },
-  { title: 'Tech Stack', url: '#tech_stack' },
+  { title: 'Education', url: '#education' },
+  { title: 'Technologies', url: '#technologies' },
 ]
 </script>
 
