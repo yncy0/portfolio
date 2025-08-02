@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ref, onMounted, nextTick } from 'vue'
+import { onMounted, nextTick, ref, watchEffect } from 'vue'
+import { useResizeObserver } from '@vueuse/core'
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/Addons.js'
 
@@ -15,16 +16,24 @@ let directionalLight: THREE.DirectionalLight
 let mixer: THREE.AnimationMixer
 const clock: THREE.Clock = new THREE.Clock()
 
-const container = ref(null)
+const container = ref<HTMLElement | null>(null)
 
 onMounted(async () => {
   await nextTick()
   init()
+})
 
-  window.addEventListener('resize', onWindowResize)
+useResizeObserver(container, () => {
+  if (container.value) onWindowResize()
+})
+
+watchEffect(() => {
+  console.log('CANVAS WIDTH:', container.value?.clientWidth)
+  console.log('CANVAS HEIGHT:', container.value?.clientHeight)
 })
 
 function init() {
+  if (!container.value) return
   scene = new THREE.Scene()
 
   camera = new THREE.PerspectiveCamera(
@@ -33,7 +42,7 @@ function init() {
     0.1,
     100,
   )
-  camera.position.set(-2, 3, 13)
+  camera.position.set(0, 3, 13)
 
   ambientLight = new THREE.AmbientLight(0xffffff, 1)
   directionalLight = new THREE.DirectionalLight(0xffffff, 2)
@@ -42,10 +51,11 @@ function init() {
 
   scene.add(camera, ambientLight, directionalLight)
 
-  const canvas = document.querySelector('#bg') as HTMLCanvasElement
-  renderer = new THREE.WebGLRenderer({ canvas: canvas, alpha: true })
+  renderer = new THREE.WebGLRenderer({ alpha: false })
   renderer.setSize(container.value.clientWidth, container.value.clientHeight)
   renderer.setPixelRatio(window.devicePixelRatio)
+
+  container.value.appendChild(renderer.domElement)
 
   loadGLTF()
 }
@@ -78,24 +88,16 @@ function animate() {
 }
 
 function onWindowResize() {
+  if (!container.value) return
   const width = container.value.clientWidth
   const height = container.value.clientHeight
   camera.aspect = width / height
   camera.updateProjectionMatrix()
-
 
   renderer.setSize(width, height)
 }
 </script>
 
 <template>
-  <canvas id="bg" ref="container" />
+  <div ref="container" class="w-[50%] max-w-screen h-dvh relative"></div>
 </template>
-
-<style scoped>
-#bg {
-  width: 50%;
-  max-width: 100%;
-  min-height: 100dvh;
-}
-</style>

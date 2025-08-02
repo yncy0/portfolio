@@ -5,7 +5,7 @@ import CoffeeWithCat from './CoffeeWithCat.vue'
 </script>
 
 <template>
-  <section class="flex flex-row">
+  <section class="flex flex-col-reverse lg:flex-row">
     <section class="flex flex-col justify-center items-start gap-7 min-h-dvh lg:w-[50%]">
       <div>
         <h1 class="lg:text-5xl font-fira-code">
