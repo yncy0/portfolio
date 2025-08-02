@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, nextTick } from 'vue'
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/Addons.js'
 
@@ -17,7 +17,8 @@ const clock: THREE.Clock = new THREE.Clock()
 
 const container = ref(null)
 
-onMounted(() => {
+onMounted(async () => {
+  await nextTick()
   init()
 
   window.addEventListener('resize', onWindowResize)
@@ -79,9 +80,11 @@ function animate() {
 function onWindowResize() {
   const width = container.value.clientWidth
   const height = container.value.clientHeight
-  renderer.setSize(width, height)
   camera.aspect = width / height
   camera.updateProjectionMatrix()
+
+
+  renderer.setSize(width, height)
 }
 </script>
 
@@ -91,7 +94,8 @@ function onWindowResize() {
 
 <style scoped>
 #bg {
-  width: 100%;
-  height: 100dvh;
+  width: 50%;
+  max-width: 100%;
+  min-height: 100dvh;
 }
 </style>
