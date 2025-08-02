@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import NothingCard from './NothingCard.vue'
 import ProjectsCard from './ProjectsCard.vue'
 import portfolioDark from "@/assets/images/projects/portfolio/dark.png"
 
