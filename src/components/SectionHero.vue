@@ -6,7 +6,7 @@ import CoffeeWithCat from './CoffeeWithCat.vue'
 
 <template>
   <section class="flex flex-col-reverse lg:flex-row w-full max-w-screen">
-    <section class="flex flex-col justify-center items-start lg:gap-7 min-h-dvh w-full max-w-screen">
+    <section class="flex flex-col justify-center items-start gap-4 lg:gap-7 h-full lg:min-h-dvh w-full max-w-screen">
       <div>
         <h1 class="text-3xl lg:text-5xl font-fira-code">
           It is I, <strong class="text-gruv-red-500"> Yancy! </strong>
