@@ -9,7 +9,7 @@ const toggleDark = useToggle(isDark)
 
 <template>
   <Button
-    class="bg-gruv-bg-500 text-gruv-fg-500 fixed bottom-10 right-20 hover:bg-gruv-bg-500"
+    class="bg-gruv-bg-500 text-gruv-fg-500 border-gruv-fg-500 border-2 fixed bottom-20 lg:bottom-10 right-1 lg:right-20 hover:bg-gruv-bg-500"
     @click="toggleDark()"
   >
     <div v-if="isDark">

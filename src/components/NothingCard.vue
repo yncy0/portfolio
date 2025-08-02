@@ -7,6 +7,6 @@ const props = defineProps<{
 
 <template>
   <div class="border-gruv-fg-600 border-2 p-20 rounded-lg flex justify-center">
-    <p>{{ props.label }}</p>
+    <p class="text-sm lg:text-md">{{ props.label }}</p>
   </div>
 </template>
