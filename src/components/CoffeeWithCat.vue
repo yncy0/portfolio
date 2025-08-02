@@ -51,7 +51,7 @@ function init() {
 
   scene.add(camera, ambientLight, directionalLight)
 
-  renderer = new THREE.WebGLRenderer({ alpha: false })
+  renderer = new THREE.WebGLRenderer({ alpha: true })
   renderer.setSize(container.value.clientWidth, container.value.clientHeight)
   renderer.setPixelRatio(window.devicePixelRatio)
 
@@ -99,5 +99,5 @@ function onWindowResize() {
 </script>
 
 <template>
-  <div ref="container" class="w-1/2 max-w-screen h-dvh relative"></div>
+  <div ref="container" class="w-full lg:w-1/2 max-w-screen h-[480px] lg:h-dvh relative"></div>
 </template>
