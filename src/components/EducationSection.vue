@@ -22,7 +22,7 @@ const education: Education[] = [
 <template>
   <section id="education" class="flex flex-col gap-2 w-full max-w-screen">
     <h2 class="text-xl">Education</h2>
-    <ul>
+    <ul class="flex flex-col gap-5">
       <li v-for="(item, index) in education" :key="index">
         <div>
           <h3>{{ item.school }}</h3>
