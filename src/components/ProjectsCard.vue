@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Link } from 'lucide-vue-next'
+
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -24,9 +26,11 @@ const props = defineProps<{
       <CardTitle>{{ props.title }}</CardTitle>
       <CardDescription>{{ props.description }}</CardDescription>
     </CardHeader>
-    <CardContent>
-      <img :src="props.imageUrl" />
-      <a :href="props.githubUrl">{{ props.githubUrl }}</a>
+    <CardContent class="flex flex-col gap-5">
+      <img :src="props.imageUrl" class="w-96" />
+      <a :href="props.githubUrl" class="flex flex-row items-center gap-2">
+        <Link class="size-4"/>{{ props.githubUrl }}
+      </a>
     </CardContent>
     <CardFooter>
       <Button class="bg-gruv-fg-500 text-gruv-bg-500">
