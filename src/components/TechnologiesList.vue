@@ -71,8 +71,8 @@ const technologies: Technologies[] = [
 
 <template>
   <section id="technologies" class="flex flex-col gap-2">
-    <h2 class="text-xl">Technologies</h2>
-    <ul class="flex flex-row gap-1">
+    <h2 class="text-lg lg:text-xl">Technologies</h2>
+    <ul class="flex flex-row flex-wrap basis-1/3 gap-1">
       <li v-for="(item, index) in technologies" :key="index" class="flex-1">
         <TechnologyIcon :name="item.name" :description="item.description" :icon="item.icon"/>
       </li>

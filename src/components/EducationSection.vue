@@ -20,13 +20,13 @@ const education: Education[] = [
 </script>
 
 <template>
-  <section id="education" class="flex flex-col gap-2">
+  <section id="education" class="flex flex-col gap-2 w-full max-w-screen">
     <h2 class="text-xl">Education</h2>
     <ul>
       <li v-for="(item, index) in education" :key="index">
         <div>
           <h3>{{ item.school }}</h3>
-          <pre>{{ item.course }}</pre>
+          <pre class="whitespace-normal">{{ item.course }}</pre>
           <em>{{ item.year }}</em>
         </div>
       </li>
