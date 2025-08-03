@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { Component } from 'vue'
-import { Card, CardContent } from '@/components/ui/card'
 
 const props = defineProps<{
   name: string

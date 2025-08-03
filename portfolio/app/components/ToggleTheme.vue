@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { Button } from '@/components/ui/button'
 import { useDark, useToggle } from '@vueuse/core'
 import { Sun, Moon } from 'lucide-vue-next'
 

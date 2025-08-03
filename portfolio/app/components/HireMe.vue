@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { Button } from './ui/button'
-
 const link = "mailto:yncyncy0@gmail.com"
 </script>
 
