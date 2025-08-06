@@ -19,7 +19,7 @@ const items: Socials[] = [
   <ul class="flex flex-row gap-4">
     <li v-for="(item, index) in items" :key="index">
       <a :href="item.link">
-        <Icon :name="item.icon"/>
+        <Icon :name="item.icon" class="size-5"/>
       </a>
     </li>
   </ul>
