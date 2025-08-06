@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Link } from 'lucide-vue-next'
+
 const props = defineProps<{
   title: string
   description: string
