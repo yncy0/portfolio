@@ -1,16 +1,8 @@
 <script setup lang="ts">
-type Projects = {
-  title: string
-  desription: string
-  imageUrl?: string
-  githubUrl?: string
-  projectUrl?: string
-}
-
 const projects: Projects[] = [
   {
     title: 'Portfolio',
-    desription:
+    description:
       'This project is to showcase my other projects and skills.' +
       'It is made with Vue + Vite, Tailwind CSS, and Shadcn/Vue',
     githubUrl: 'https://github.com/Yncy0/portfolio',
@@ -26,7 +18,7 @@ const projects: Projects[] = [
       <li v-for="(item, index) in projects" :key="index">
         <ProjectsCard
           :title="item.title"
-          :description="item.desription"
+          :description="item.description"
           :github-url="item.githubUrl"
           :image-url="item.imageUrl"
         />

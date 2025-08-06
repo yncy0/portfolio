@@ -1,10 +1,4 @@
 <script setup lang="ts">
-type Education = {
-  school: string
-  course: string
-  year: string
-}
-
 const education: Education[] = [
   {
     school: 'La Consolacion University Philippines',

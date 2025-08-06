@@ -1,17 +1,13 @@
 <script setup lang="ts">
-import type { Component } from "vue";
+import type { Technologies } from '#imports';
 
-const props = defineProps<{
-  name: string;
-  description: string;
-  icon: Component;
-}>();
+const props = defineProps<Technologies>();
 </script>
 
 <template>
   <Card class="flex flex-col items-center bg-gruv-bg-500 shadow-none border-gruv-fg-500 border-2 text-gruv-fg-500">
     <CardContent class="flex flex-col items-center">
-      <component :is="props.icon" />
+      <Icon :name="props.icon" class="size-6"/>
       <h3>{{ props.name }}</h3>
     </CardContent>
   </Card>
