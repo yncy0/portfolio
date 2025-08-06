@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { Link } from 'lucide-vue-next'
-
 const props = defineProps<{
   title: string
   description: string
@@ -19,7 +17,7 @@ const props = defineProps<{
     <CardContent class="flex flex-col gap-5">
       <img :src="props.imageUrl" class="w-96" />
       <a :href="props.githubUrl" class="flex flex-row items-center gap-2">
-        <Link class="size-4"/>{{ props.githubUrl }}
+        <Icon name="lucide:link" />{{ props.githubUrl }}
       </a>
     </CardContent>
     <CardFooter>
