@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { Technologies } from '#imports';
+
 const props = defineProps<Technologies>();
 </script>
 

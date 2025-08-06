@@ -16,6 +16,12 @@ export type Projects = {
   projectUrl?: string
 }
 
+// SocialsList.vue
+export type Socials = {
+  link: string
+  icon: string
+}
+
 // TechnologiesList.vue && TechnologyIcon.vue
 export type Technologies = {
   name: string

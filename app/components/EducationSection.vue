@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 const education: Education[] = [
   {
     school: 'La Consolacion University Philippines',
