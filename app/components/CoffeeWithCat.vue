@@ -27,11 +27,6 @@ useResizeObserver(container, () => {
   if (container.value) onWindowResize()
 })
 
-watchEffect(() => {
-  console.log('CANVAS WIDTH:', container.value?.clientWidth)
-  console.log('CANVAS HEIGHT:', container.value?.clientHeight)
-})
-
 function init() {
   if (!container.value) return
   scene = new THREE.Scene()
@@ -63,7 +58,7 @@ function init() {
 function loadGLTF() {
   const gltfLoader = new GLTFLoader()
 
-  const url: string = '/coffee_with_cat.glb'
+  const url: string = '/models/coffee_with_cat.glb'
 
   gltfLoader.load(url, (gltf) => {
     const mesh = gltf.scene
