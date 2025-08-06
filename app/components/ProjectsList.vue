@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import ProjectsCard from './ProjectsCard.vue'
-import portfolioDark from "@/assets/images/projects/portfolio/dark.png"
-
 type Projects = {
   title: string
   desription: string
@@ -17,7 +14,7 @@ const projects: Projects[] = [
       'This project is to showcase my other projects and skills.' +
       'It is made with Vue + Vite, Tailwind CSS, and Shadcn/Vue',
     githubUrl: 'https://github.com/Yncy0/portfolio',
-    imageUrl: portfolioDark
+    imageUrl: "/images/projects/portfolio/dark.png"
   },
 ]
 </script>

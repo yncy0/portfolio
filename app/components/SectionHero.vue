@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import { Badge } from '@/components/ui/badge'
-
-import CoffeeWithCat from './CoffeeWithCat.vue'
-</script>
-
 <template>
   <section class="flex flex-col-reverse lg:flex-row w-full max-w-screen">
     <section class="flex flex-col justify-center items-start gap-4 lg:gap-7 h-full lg:min-h-dvh w-full max-w-screen">

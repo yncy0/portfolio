@@ -12,8 +12,6 @@ import {
   NeovimIcon,
 } from 'vue3-simple-icons'
 
-import TechnologyIcon from './TechnologyIcon.vue'
-
 type Technologies = {
   name: string
   description?: string
