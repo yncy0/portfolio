@@ -1,11 +1,4 @@
 <script setup lang="ts">
-type Projects = {
-  title: string
-  desription: string
-  imageUrl?: string
-  githubUrl?: string
-  projectUrl?: string
-}
 
 const projects: Projects[] = [
   {

@@ -1,8 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{
-  name: string;
-  icon: string;
-}>();
+const props = defineProps<Technologies>();
 </script>
 
 <template>

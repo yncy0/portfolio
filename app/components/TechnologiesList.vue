@@ -1,9 +1,4 @@
 <script setup lang="ts">
-type Technologies = {
-  name: string
-  icon: string
-}
-
 const technologies: Technologies[] = [
   {
     name: 'Vue',

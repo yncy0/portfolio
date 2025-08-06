@@ -1,11 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{
-  title: string
-  description: string
-  imageUrl?: string
-  githubUrl?: string
-  projectUrl?: string
-}>()
+const props = defineProps<Projects>()
 </script>
 
 <template>
