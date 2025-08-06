@@ -12,8 +12,9 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts',
     '@nuxt/test-utils',
-    '@nuxt/ui',
     'shadcn-nuxt',
+    '@nuxthub/core',
+    '@nuxt/icon',
   ],
 
   css: ['~/assets/css/main.css'],
@@ -32,4 +33,9 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
+
+  icon: {
+    mode: 'css',
+    cssLayer: 'base'
+  }
 })

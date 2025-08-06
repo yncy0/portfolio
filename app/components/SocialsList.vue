@@ -1,23 +1,25 @@
 <script setup lang="ts">
-import { GitHubIcon, GmailIcon, XIcon} from 'vue3-simple-icons'
+const items: Socials[] = [
+  {
+    link: "https://github.com/Yncy0",
+    icon: "simple-icons:github",
+  },
+  {
+    link: "mailto:yncyncy0@gmail.com",
+    icon: "simple-icons:gmail",
+  },
+  {
+    link: "https://x.com/yncynotdev",
+    icon: "simple-icons:x",
+  },
+];
 </script>
 
-<!-- FIXME: bad design -->
 <template>
   <ul class="flex flex-row gap-4">
-    <li>
-      <a href="https://github.com/Yncy0">
-        <GitHubIcon />
-      </a>
-    </li>
-    <li>
-      <a href="mailto:yncyncy0@gmail.com">
-        <GmailIcon />
-      </a>
-    </li>
-    <li>
-      <a href="https://x.com/yncynotdev">
-        <XIcon/>
+    <li v-for="(item, index) in items" :key="index">
+      <a :href="item.link">
+        <Icon :name="item.icon" class="size-5"/>
       </a>
     </li>
   </ul>
