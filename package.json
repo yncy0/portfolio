@@ -15,16 +15,16 @@
     "@nuxt/image": "1.11.0",
     "@nuxt/scripts": "0.11.10",
     "@nuxt/test-utils": "3.19.2",
-    "@nuxt/ui": "3.3.0",
+    "@nuxthub/core": "0.9.0",
     "@tailwindcss/vite": "^4.1.11",
-    "@unhead/vue": "^2.0.13",
+    "@unhead/vue": "^2.0.14",
     "@vueuse/core": "^13.6.0",
     "better-sqlite3": "^12.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "eslint": "^9.32.0",
     "lucide-vue-next": "^0.536.0",
-    "nuxt": "^4.0.2",
+    "nuxt": "^4.0.3",
     "reka-ui": "^2.4.1",
     "shadcn-nuxt": "2.2.0",
     "tailwind-merge": "^3.3.1",
@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
-    "@types/three": "^0.178.1"
+    "@types/three": "^0.178.1",
+    "wrangler": "^4.28.0"
   }
 }
