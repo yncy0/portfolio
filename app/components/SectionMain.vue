@@ -7,7 +7,10 @@
     <section class="flex flex-col gap-10">
       <ExperienceList />
       <ProjectsList />
-      <TechnologiesList />
+
+      <h2 class="text-lg lg:text-xl">Technologies</h2>
+      <TechnologiesList :lists="technologiesList" />
+
       <EducationSection />
     </section>
 

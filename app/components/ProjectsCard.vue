@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { Projects } from '#imports';
+import type { Projects } from "#imports";
 
-const props = defineProps<Projects>()
+const props = defineProps<Projects>();
 </script>
 
 <template>
@@ -11,14 +11,15 @@ const props = defineProps<Projects>()
       <CardDescription>{{ props.description }}</CardDescription>
     </CardHeader>
     <CardContent class="flex flex-col gap-5">
-      <img :src="props.imageUrl" class="w-96" />
+      <img :src="props.imageUrl" class="w-full" >
       <a :href="props.githubUrl" class="flex flex-row items-center gap-2">
         <Icon name="lucide:link" />{{ props.githubUrl }}
       </a>
+      <ProjectTechStack :lists="portfolioTechStack"/>
     </CardContent>
     <CardFooter>
       <Button class="bg-gruv-fg-500 text-gruv-bg-500">
-        <a :href="props.githubUrl">View Project</a>
+        <a :href="props.projectUrl">View Project</a>
       </Button>
     </CardFooter>
   </Card>
