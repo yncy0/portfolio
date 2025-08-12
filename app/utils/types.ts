@@ -23,8 +23,9 @@ export type Socials = {
 };
 
 // TechnologiesList.vue && TechnologyIcon.vue
-export type Technologies = {
-  name: string;
+export interface Technologies {
+  name?: string;
   icon: string;
-  size: number;
-};
+  size?: number;
+}
+

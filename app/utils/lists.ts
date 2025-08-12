@@ -53,5 +53,59 @@ export const technologiesList: Technologies[] = [
   },
 ];
 
+/**
+ * @type Technologies
+ *
+ * Arrays list of within ProjectCard.vue component
+ */
 
+export const portfolioTechStack: Technologies[] = [
+  {
+    name: "Vue",
+    icon: "simple-icons:vuedotjs",
+    size: 12,
+  },
+  {
+    name: "Nuxt",
+    icon: "simple-icons:nuxt",
+    size: 12,
+  },
+  {
+    name: "TailwindCSS",
+    icon: "simple-icons:tailwindcss",
+    size: 12,
+  },
+  {
+    name: "TypeScript",
+    icon: "simple-icons:typescript",
+    size: 12,
+  },
+];
 
+export const monthsaryTechStack: Technologies[] = [
+  {
+    name: "Vue",
+    icon: "simple-icons:vuedotjs",
+    size: 12,
+  },
+  {
+    name: "Nuxt",
+    icon: "simple-icons:nuxt",
+    size: 12,
+  },
+  {
+    name: "TailwindCSS",
+    icon: "simple-icons:tailwindcss",
+    size: 12,
+  },
+  {
+    name: "TypeScript",
+    icon: "simple-icons:typescript",
+    size: 12,
+  },
+  {
+    name: "Supabase",
+    icon: "simple-icons:supabase",
+    size: 12,
+  },
+];

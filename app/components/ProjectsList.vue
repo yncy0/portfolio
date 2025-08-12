@@ -1,14 +1,24 @@
 <script setup lang="ts">
 const projects: Projects[] = [
   {
-    title: 'Portfolio',
+    title: "Portfolio",
     description:
-      'This project is to showcase my other projects and skills.' +
-      'It is made with Vue + Vite, Tailwind CSS, and Shadcn/Vue',
-    githubUrl: 'https://github.com/Yncy0/portfolio',
-    imageUrl: "/images/projects/portfolio/dark.png"
+      "This project is to showcase my other projects and skills." +
+      "It is made with Nuxt, Tailwind CSS, and Shadcn/Vue",
+    githubUrl: "https://github.com/Yncy0/portfolio",
+    imageUrl: "/images/projects/portfolio/dark.png",
+    projectUrl: "https://yncy0.nuxt.dev/",
   },
-]
+  {
+    title: "Monthsary Website",
+    description:
+      "A fun project dedicated to my girlfriend❤️. " +
+      "This Project compose of Nuxt + Nuxt plugins and ecosystem, Tailwdind CSS, and Supabase as back-end",
+    githubUrl: "https://github.com/Yncy0/monthsary",
+    imageUrl: "/images/projects/monthsary/hero-section.png",
+    projectUrl: "https://monthsary-website.nuxt.dev/",
+  },
+];
 </script>
 
 <template>
@@ -20,7 +30,8 @@ const projects: Projects[] = [
           :title="item.title"
           :description="item.description"
           :github-url="item.githubUrl"
-          :image-url="item.imageUrl"
+          :image-url="item.imageUrl" 
+          :project-url="item.projectUrl"
         />
       </li>
     </ul>
