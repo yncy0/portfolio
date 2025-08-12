@@ -15,7 +15,7 @@ const props = defineProps<Projects>();
       <a :href="props.githubUrl" class="flex flex-row items-center gap-2">
         <Icon name="lucide:link" />{{ props.githubUrl }}
       </a>
-      <ProjectTechStack :lists="portfolioTechStack"/>
+      <ProjectTechStack :lists="props.techstack"/>
     </CardContent>
     <CardFooter>
       <Button class="bg-gruv-fg-500 text-gruv-bg-500">
