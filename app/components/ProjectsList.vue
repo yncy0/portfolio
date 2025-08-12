@@ -8,6 +8,7 @@ const projects: Projects[] = [
     githubUrl: "https://github.com/Yncy0/portfolio",
     imageUrl: "/images/projects/portfolio/dark.png",
     projectUrl: "https://yncy0.nuxt.dev/",
+    techstack: portfolioTechStack,
   },
   {
     title: "Monthsary Website",
@@ -17,6 +18,7 @@ const projects: Projects[] = [
     githubUrl: "https://github.com/Yncy0/monthsary",
     imageUrl: "/images/projects/monthsary/hero-section.png",
     projectUrl: "https://monthsary-website.nuxt.dev/",
+    techstack: monthsaryTechStack,
   },
 ];
 </script>
@@ -24,14 +26,15 @@ const projects: Projects[] = [
 <template>
   <section id="projects" class="flex flex-col gap-2">
     <h2 class="text-lg lg:text-xl">Projects</h2>
-    <ul class="flex flex-row basis-[1/3] gap-2">
+    <ul class="flex flex-col lg:flex-row lg:basis-1/3 gap-2">
       <li v-for="(item, index) in projects" :key="index">
         <ProjectsCard
           :title="item.title"
           :description="item.description"
           :github-url="item.githubUrl"
-          :image-url="item.imageUrl" 
+          :image-url="item.imageUrl"
           :project-url="item.projectUrl"
+          :techstack="item.techstack"
         />
       </li>
     </ul>
