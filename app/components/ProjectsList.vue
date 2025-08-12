@@ -8,6 +8,7 @@ const projects: Projects[] = [
     githubUrl: "https://github.com/Yncy0/portfolio",
     imageUrl: "/images/projects/portfolio/dark.png",
     projectUrl: "https://yncy0.nuxt.dev/",
+    techstack: portfolioTechStack,
   },
   {
     title: "Monthsary Website",
@@ -17,6 +18,7 @@ const projects: Projects[] = [
     githubUrl: "https://github.com/Yncy0/monthsary",
     imageUrl: "/images/projects/monthsary/hero-section.png",
     projectUrl: "https://monthsary-website.nuxt.dev/",
+    techstack: monthsaryTechStack,
   },
 ];
 </script>
@@ -30,8 +32,9 @@ const projects: Projects[] = [
           :title="item.title"
           :description="item.description"
           :github-url="item.githubUrl"
-          :image-url="item.imageUrl" 
+          :image-url="item.imageUrl"
           :project-url="item.projectUrl"
+          :techstack="item.techstack"
         />
       </li>
     </ul>

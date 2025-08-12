@@ -14,6 +14,7 @@ export type Projects = {
   imageUrl?: string;
   githubUrl?: string;
   projectUrl?: string;
+  techstack: Technologies[]
 };
 
 // SocialsList.vue
