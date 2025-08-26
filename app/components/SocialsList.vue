@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const items: Socials[] = [
   {
-    link: "https://github.com/Yncy0",
+    link: "https://github.com/yncy0",
     icon: "simple-icons:github",
   },
   {
