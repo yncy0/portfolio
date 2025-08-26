@@ -5,7 +5,7 @@ const projects: Projects[] = [
     description:
       "This project is to showcase my other projects and skills." +
       "It is made with Nuxt, Tailwind CSS, and Shadcn/Vue",
-    githubUrl: "https://github.com/Yncy0/portfolio",
+    githubUrl: "https://github.com/yncy0/portfolio",
     imageUrl: "/images/projects/portfolio/dark.png",
     projectUrl: "https://yncy0.nuxt.dev/",
     techstack: portfolioTechStack,
@@ -15,7 +15,7 @@ const projects: Projects[] = [
     description:
       "A fun project dedicated to my girlfriend❤️. " +
       "This Project compose of Nuxt + Nuxt plugins and ecosystem, Tailwdind CSS, and Supabase as back-end",
-    githubUrl: "https://github.com/Yncy0/monthsary",
+    githubUrl: "https://github.com/yncy0/monthsary",
     imageUrl: "/images/projects/monthsary/hero-section.png",
     projectUrl: "https://monthsary-website.nuxt.dev/",
     techstack: monthsaryTechStack,
