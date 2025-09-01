@@ -27,7 +27,7 @@ export const technologiesList: Technologies[] = [
     size: 24,
   },
   {
-    name: "TailwindCSS",
+    name: "Tailwind",
     icon: "simple-icons:tailwindcss",
     size: 24,
   },
@@ -39,6 +39,11 @@ export const technologiesList: Technologies[] = [
   {
     name: "Supabase",
     icon: "simple-icons:supabase",
+    size: 24,
+  },
+  {
+    name: "Godot",
+    icon: "simple-icons:godotengine",
     size: 24,
   },
   {
