@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Projects } from "#imports";
+import type { Projects } from "~/utils/types";
 
 const props = defineProps<Projects>();
 </script>
