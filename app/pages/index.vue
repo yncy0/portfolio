@@ -1,9 +1,14 @@
 <template>
-  <main class="flex flex-col items-start justify-center px-5 md:px-44 lg:px-56">
+  <main class="flex flex-col items-start justify-center">
     <HeroSection />
-    <MainSection />
+    <section class="flex flex-col min-h-dvh w-full max-w-screen pt-20 gap-10">
+      <AboutMeSection />
+      <ExperienceSection />
+      <ProjectSection />
+      <TechnologySection />
+      <EducationSection />
 
-    <ToggleTheme />
+      <HireMeButton />
+    </section>
   </main>
-  <AppFooter />
 </template>
