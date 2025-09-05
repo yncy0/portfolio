@@ -10,8 +10,8 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@iconify-json/lucide": "^1.2.60",
-    "@iconify-json/simple-icons": "^1.2.46",
+    "@iconify-json/lucide": "^1.2.66",
+    "@iconify-json/simple-icons": "^1.2.50",
     "@nuxt/content": "3.6.3",
     "@nuxt/eslint": "1.7.1",
     "@nuxt/icon": "1.15.0",
@@ -19,22 +19,22 @@
     "@nuxt/scripts": "0.11.10",
     "@nuxt/test-utils": "3.19.2",
     "@nuxthub/core": "0.9.0",
-    "@tailwindcss/vite": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.13",
     "@unhead/vue": "^2.0.14",
-    "@vueuse/core": "^13.6.0",
+    "@vueuse/core": "^13.9.0",
     "better-sqlite3": "^12.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "eslint": "^9.32.0",
-    "nuxt": "^4.0.3",
-    "reka-ui": "^2.4.1",
+    "eslint": "^9.34.0",
+    "nuxt": "^4.1.0",
+    "reka-ui": "^2.5.0",
     "shadcn-nuxt": "2.2.0",
     "tailwind-merge": "^3.3.1",
-    "tailwindcss": "^4.1.11",
+    "tailwindcss": "^4.1.13",
     "three": "^0.179.1",
-    "tw-animate-css": "^1.3.6",
+    "tw-animate-css": "^1.3.8",
     "typescript": "^5.9.2",
-    "vue": "^3.5.18",
+    "vue": "^3.5.21",
     "vue-router": "^4.5.1"
   },
   "pnpm": {
@@ -44,6 +44,6 @@
   },
   "devDependencies": {
     "@types/three": "^0.178.1",
-    "wrangler": "^4.28.0"
+    "wrangler": "^4.34.0"
   }
 }
