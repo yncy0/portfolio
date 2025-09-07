@@ -25,7 +25,7 @@ const projects: Projects[] = [
 
 <template>
   <section>
-    <ul class="flex flex-col lg:flex-row lg:basis-1/3 gap-2">
+    <ul class="flex flex-col lg:basis-1/3 lg:flex-row gap-2">
       <li v-for="(item, index) in projects" :key="index">
         <ProjectsCard
           :title="item.title"

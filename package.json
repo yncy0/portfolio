@@ -43,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "@catppuccin/tailwindcss": "^1.0.0",
     "@types/three": "^0.178.1",
     "wrangler": "^4.34.0"
   }
