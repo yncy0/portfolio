@@ -1,9 +1,9 @@
 <template>
   <section class="flex flex-col gap-5 w-full">
     <h2 class="text-lg lg:text-xl">About me</h2>
-    <Card class="max-w-screen w-full bg-gruv-bg-500 text-gruv-fg-500 shadow-none border-gruv-fg-500 rounded-sm">
+    <Card class="max-w-screen w-full bg-gruv-bg-hard text-gruv-fg-500 shadow-none border-gruv-fg-500 rounded-sm">
       <CardContent>
-        <p class="text-md">
+        <p class="text-lg">
           Hello there! My name is Yancy. A front-end developer that focuses on
           building and collaboration among front-end projects specially
           Vue/Nuxt.

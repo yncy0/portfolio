@@ -37,7 +37,7 @@ function init() {
     0.1,
     100,
   )
-  camera.position.set(0, 3, 11)
+  camera.position.set(0, 2, 13)
 
   ambientLight = new THREE.AmbientLight(0xffffff, 1)
   directionalLight = new THREE.DirectionalLight(0xffffff, 2)
@@ -94,5 +94,5 @@ function onWindowResize() {
 </script>
 
 <template>
-  <div ref="container" class="w-full lg:w-1/2 max-w-screen h-[480px] lg:h-[520px] relative"/>
+  <div ref="container" class="w-full lg:w-1/2 max-w-screen h-[480px] lg:h-dvh relative"/>
 </template>
