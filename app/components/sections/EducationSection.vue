@@ -16,13 +16,13 @@ const education: Education[] = [
 
 <template>
   <section id="education" class="flex flex-col gap-2 w-full max-w-screen">
-    <h2 class="text-xl">Education</h2>
-    <Card class="bg-cat-base text-cat-text border-cat-text border shadow-none rounded-sm">
+    <h2 class="text-xl dark:text-ctp-green-200 text-cat-text">Education</h2>
+    <Card class="bg-cat-base text-cat-text dark:border-ctp-green-200 border-cat-text border shadow-none rounded-sm">
       <CardContent>
         <ul class="flex flex-col gap-5">
           <li v-for="(item, index) in education" :key="index">
             <div>
-              <h3>{{ item.school }}</h3>
+              <h3 class="dark:text-ctp-green-200">{{ item.school }}</h3>
               <pre class="whitespace-normal">{{ item.course }}</pre>
               <em>{{ item.year }}</em>
             </div>
