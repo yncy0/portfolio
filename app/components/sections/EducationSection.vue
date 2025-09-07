@@ -17,7 +17,7 @@ const education: Education[] = [
 <template>
   <section id="education" class="flex flex-col gap-2 w-full max-w-screen">
     <h2 class="text-xl">Education</h2>
-    <Card class="bg-gruv-500 border-gruv-fg-500 text-gruv-fg-500 border shadow-none rounded-sm">
+    <Card class="bg-cat-base text-cat-text border-cat-text border shadow-none rounded-sm">
       <CardContent>
         <ul class="flex flex-col gap-5">
           <li v-for="(item, index) in education" :key="index">

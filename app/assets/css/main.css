@@ -6,99 +6,28 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* color palette from <https://github.com/morhetz/gruvbox.git> */
+
 @theme {
-  --color-gruv-bg-hard: #f9f5d7;
-  --color-gruv-bg-soft: #f2e5bc;
-  --color-gruv-bg-500: #fbf1c7;
-  --color-gruv-bg-600: #ebdbb2;
-  --color-gruv-bg-700: #d5c4a1;
-  --color-gruv-bg-800: #bdae93;
-  --color-gruv-bg-900: #a89984;
-
-  --color-gruv-fg-200: #7c6f64;
-  --color-gruv-fg-300: #665c54;
-  --color-gruv-fg-400: #504945;
-  --color-gruv-fg-500: #3c3836;
-  --color-gruv-fg-600: #282828;
-
-  --color-gruv-red-500: #cc241d;
-  --color-gruv-red-600: #9d0006;
-
-  --color-gruv-green-500: #98971a;
-  --color-gruv-green-600: #79740e;
-
-  --color-gruv-yellow-500: #d79912;
-  --color-gruv-yellow-600: #b57614;
-
-  --color-gruv-blue-500: #458588;
-  --color-gruv-blue-600: #076678;
-
-  --color-gruv-purple-500: #b16286;
-  --color-gruv-purple-600: #8f4f71;
-
-  --color-gruv-aqua-500: #689d6a;
-  --color-gruv-aqua-600: #427b58;
-
-  --color-gruv-orange-500: #d65d0e;
-  --color-gruv-orange-600: #af3a03;
-
-  --color-gruv-gray-500: #7c6f64;
-  --color-gruv-gray-600: #928374;
+  --color-cat-base: #eff1f5;
+  --color-cat-crust: #dce0e8;
+  --color-cat-text: #4c4f69;
 
   --font-fira-code: "Fira Code", monospace;
   --font-fira-sans: "Fira Sans", sans-serif;
 }
 
 .dark {
-  --color-gruv-bg-hard: #1d2021;
-  --color-gruv-bg-soft: #32302f;
-  --color-gruv-bg-500: #282828;
-  --color-gruv-bg-600: #3c3836;
-  --color-gruv-bg-700: #504945;
-  --color-gruv-bg-800: #665c54;
-  --color-gruv-bg-900: #7c6f64;
-
-  --color-gruv-fg-200: #fbf1c7;
-  --color-gruv-fg-300: #ebdbb2;
-  --color-gruv-fg-400: #d5c4a1;
-  --color-gruv-fg-500: #bdae93;
-  --color-gruv-fg-600: #a89984;
-
-  --color-gruv-red-500: #fb4934;
-  --color-gruv-red-600: #cc2412;
-
-  --color-gruv-green-500: #b8bb26;
-  --color-gruv-green-600: #98971a;
-
-  --color-gruv-yellow-500: #fabd2f;
-  --color-gruv-yellow-600: #d79921;
-
-  --color-gruv-blue-500: #83a598;
-  --color-gruv-blue-600: #458588;
-
-  --color-gruv-purple-500: #d3869b;
-  --color-gruv-purple-600: #b16286;
-
-  --color-gruv-aqua-500: #8ec07c;
-  --color-gruv-aqua-600: #689d6a;
-
-  --color-gruv-orange-500: #fe8019;
-  --color-gruv-orange-600: #d65d0e;
-
-  --color-gruv-gray-500: #928374;
-  --color-gruv-gray-600: #a89984;
+  --color-cat-base: #1e1e2e;
+  --color-cat-crust: #11111b;
+  --color-cat-text: #cdd6f4;
 
   --font-fira-code: "Fira Code", monospace;
   --font-fira-sans: "Fira Sans", sans-serif;
 }
 
 :root {
-  --color-background: var(--color-gruv-bg-500);
-  --color-background-hard: var(--color-gruv-bg-hard);
-  --color-background-soft: var(--color-gruv-bg-soft);
-
-  --color-text: var(--color-gruv-fg-500);
+  --color-background: var(--color-cat-base);
+  --color-text: var(--color-cat-text);
 }
 
 *,
@@ -123,7 +52,7 @@ strong {
 body {
   min-height: 100vh;
   color: var(--color-text);
-  background: var(--color-background-hard);
+  background: var(--color-background);
   transition:
     color 0.5s,
     background-color 0.5s;

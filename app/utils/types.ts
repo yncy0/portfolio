@@ -21,6 +21,7 @@ export type Projects = {
 export type Socials = {
   link: string;
   icon: string;
+  aria: string;
 };
 
 // TechnologiesList.vue && TechnologyIcon.vue
