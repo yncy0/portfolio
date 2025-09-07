@@ -1,17 +1,20 @@
 <template>
-  <section class="flex flex-col gap-5">
-    <div class="flex flex-col">
-      <h2 class="text-lg lg:text-xl">About me</h2>
-      <p class="text-sm lg:text-md">
-        Hello there! My name is Yancy. A front-end developer that focuses on
-        building and collaboration among front-end projects specially Vue/Nuxt.
-        <br >
+  <section class="flex flex-col gap-5 w-full">
+    <h2 class="text-lg lg:text-xl">About me</h2>
+    <Card class="max-w-screen w-full bg-gruv-bg-500 text-gruv-fg-500 shadow-none border-gruv-fg-500 rounded-sm">
+      <CardContent>
+        <p class="text-md">
+          Hello there! My name is Yancy. A front-end developer that focuses on
+          building and collaboration among front-end projects specially
+          Vue/Nuxt.
+          <br >
 
-        Driven by curiosity, I also venture into other technologies when I take
-        a break doing front-end stuff such as back-end development, game
-        development, and the Linux technology.
-        <br >
-      </p>
-    </div>
+          Driven by curiosity, I also venture into other technologies when I
+          take a break doing front-end stuff such as back-end development, game
+          development, and the Linux technology.
+          <br >
+        </p>
+      </CardContent>
+    </Card>
   </section>
 </template>

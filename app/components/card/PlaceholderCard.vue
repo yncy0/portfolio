@@ -5,7 +5,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="border-gruv-fg-600 border-2 p-20 rounded-lg flex justify-center">
+  <div class="border-gruv-fg-500 border p-20 rounded-sm flex justify-center">
     <p class="text-sm lg:text-md">{{ props.label }}</p>
   </div>
 </template>

@@ -1,14 +1,12 @@
 <template>
-  <main class="flex flex-col items-start justify-center">
+  <main class="flex flex-col items-start justify-center w-full max-w-screen gap-10">
     <HeroSection />
-    <section class="flex flex-col min-h-dvh w-full max-w-screen pt-20 gap-10">
-      <AboutMeSection />
-      <ExperienceSection />
-      <ProjectSection />
-      <TechnologySection />
-      <EducationSection />
+    <AboutMeSection class="pt-20 lg:pt-0"/>
+    <ExperienceSection />
+    <ProjectSection />
+    <TechnologySection />
+    <EducationSection />
 
-      <HireMeButton />
-    </section>
+    <HireMeButton />
   </main>
 </template>

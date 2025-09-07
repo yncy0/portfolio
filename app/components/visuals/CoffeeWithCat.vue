@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, nextTick, ref, watchEffect } from 'vue'
+import { onMounted, nextTick, ref } from 'vue'
 import { useResizeObserver } from '@vueuse/core'
 import * as THREE from 'three'
 import { GLTFLoader } from 'three/examples/jsm/Addons.js'
@@ -37,7 +37,7 @@ function init() {
     0.1,
     100,
   )
-  camera.position.set(0, 3, 13)
+  camera.position.set(0, 3, 11)
 
   ambientLight = new THREE.AmbientLight(0xffffff, 1)
   directionalLight = new THREE.DirectionalLight(0xffffff, 2)
@@ -94,5 +94,5 @@ function onWindowResize() {
 </script>
 
 <template>
-  <div ref="container" class="w-full lg:w-1/2 max-w-screen h-[480px] lg:h-dvh relative"></div>
+  <div ref="container" class="w-full lg:w-1/2 max-w-screen h-[480px] lg:h-[520px] relative"/>
 </template>
