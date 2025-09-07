@@ -17,6 +17,15 @@ export default defineNuxtConfig({
     '@nuxt/icon',
   ],
 
+  app: {
+    head: {
+      title: 'Portfolio by Yancy',
+      htmlAttrs: {
+        lang: 'en'
+      }
+    }
+  },
+
   css: ['~/assets/css/main.css'],
   vite: {
     plugins: [tailwindcss()],

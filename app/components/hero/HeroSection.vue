@@ -7,7 +7,7 @@
     >
       <div>
         <h1 class="text-3xl lg:text-5xl font-fira-code">
-          It is I, <strong class="text-ctp-red-300"> Yancy! </strong>
+          It is I, <strong class="text-ctp-red-500"> Yancy! </strong>
         </h1>
         <h1 class="text-5xl lg:text-7xl">Your average programming enjoyer</h1>
       </div>
