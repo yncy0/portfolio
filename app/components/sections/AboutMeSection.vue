@@ -1,7 +1,7 @@
 <template>
   <section class="flex flex-col gap-5 w-full">
-    <h2 class="text-lg lg:text-xl">About me</h2>
-    <Card class="max-w-screen w-full bg-cat-base text-cat-text border-cat-text shadow-none rounded-sm">
+    <h2 class="text-lg lg:text-xl dark:text-ctp-green-200">About me</h2>
+    <Card class="max-w-screen w-full bg-cat-base text-cat-text dark:border-ctp-green-200 border-cat-text shadow-none rounded-sm">
       <CardContent>
         <p class="text-lg">
           Hello there! My name is Yancy. A front-end developer that focuses on

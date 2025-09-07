@@ -8,7 +8,7 @@
     <Badge class="text-md bg-gradient-to-r from-ctp-green-200 to-ctp-teal-200 text-black"
       >Vue/Nuxt Developer</Badge
     >
-    <Badge class="text-md bg-gradient-to-r from-ctp-blue-200 to-ctp-sapphire-200 text-black"
+    <Badge class="text-md bg-ctp-sapphire-200 text-black"
       >React/NextJS Developer</Badge
     >
   </div>

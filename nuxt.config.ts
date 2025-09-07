@@ -1,50 +1,56 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-import tailwindcss from '@tailwindcss/vite'
+import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
 
   modules: [
-    '@nuxt/content',
-    '@nuxt/eslint',
-    '@nuxt/image',
-    '@nuxt/scripts',
-    '@nuxt/test-utils',
-    'shadcn-nuxt',
-    '@nuxthub/core',
-    '@nuxt/icon',
+    "@nuxt/content",
+    "@nuxt/eslint",
+    "@nuxt/image",
+    "@nuxt/scripts",
+    "@nuxt/test-utils",
+    "shadcn-nuxt",
+    "@nuxthub/core",
+    "@nuxt/icon",
   ],
 
   app: {
     head: {
-      title: 'Portfolio by Yancy',
+      title: "Portfolio by Yancy",
       htmlAttrs: {
-        lang: 'en'
-      }
-    }
+        lang: "en",
+      },
+      meta: [
+        {
+          name: "description",
+          content: "Just a simple Portfolio website built using Nuxt",
+        },
+      ],
+    },
   },
 
-  css: ['~/assets/css/main.css'],
+  css: ["~/assets/css/main.css"],
   vite: {
     plugins: [tailwindcss()],
   },
 
   shadcn: {
-    prefix: '',
-    componentDir: './app/components/ui',
+    prefix: "",
+    componentDir: "./app/components/ui",
   },
 
   components: [
     {
-      path: '~/components',
+      path: "~/components",
       pathPrefix: false,
     },
   ],
 
   icon: {
-    mode: 'css',
-    cssLayer: 'base'
-  }
-})
+    mode: "css",
+    cssLayer: "base",
+  },
+});

@@ -5,10 +5,12 @@ const props = defineProps<Projects>();
 </script>
 
 <template>
-  <Card class="bg-cat-base text-cat-text border-cat-text border shadow-none rounded-sm">
+  <Card class="bg-cat-base text-cat-text dark:border-ctp-green-200 border-cat-text border shadow-none rounded-sm">
     <CardHeader>
       <CardTitle>{{ props.title }}</CardTitle>
-      <CardDescription class="text-cat-text">{{ props.description }}</CardDescription>
+      <CardDescription class="text-cat-text">{{
+        props.description
+        }}</CardDescription>
     </CardHeader>
 
     <CardContent class="flex flex-col gap-5">
@@ -17,12 +19,15 @@ const props = defineProps<Projects>();
     </CardContent>
 
     <CardFooter class="flex flex-row gap-5">
-      <Button aria-label="Link to Project" class="bg-cat-text text-cat-base p-5">
+      <Button aria-label="Link to Project" class="dark:bg-ctp-green-200 bg-cat-text text-cat-base p-5">
         <a :href="props.projectUrl">View Project</a>
       </Button>
-      <Button aria-label="Link to GitHub" class="bg-cat-base text-cat-text border-cat-text border shadow-none p-5 items-center">
+      <Button
+        aria-label="Link to GitHub"
+        class="bg-cat-base dark:text-ctp-green-200 text-cat-text 
+              dark:border-ctp-green-200 border-cat-text border shadow-none p-5 items-center">
         <a :href="props.githubUrl" class="flex flex-row items-center gap-2">
-          <Icon name="simple-icons:github" class="size-4"/>
+          <Icon name="simple-icons:github" class="size-4" />
           GitHub
         </a>
       </Button>

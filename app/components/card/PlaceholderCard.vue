@@ -1,11 +1,14 @@
 <script setup lang="ts">
 const props = defineProps<{
-  label: string
-}>()
+  label: string;
+}>();
 </script>
 
 <template>
-  <div class="border-cat-text border p-20 rounded-sm flex justify-center">
-    <p class="text-sm lg:text-md">{{ props.label }}</p>
-  </div>
+  <Card
+    class="bg-cat-base dark:border-ctp-green-200 border-cat-text border p-20 rounded-sm flex items-center justify-center">
+    <CardContent>
+      <p class="text-sm lg:text-md text-cat-text">{{ props.label }}</p>
+    </CardContent>
+  </Card>
 </template>
