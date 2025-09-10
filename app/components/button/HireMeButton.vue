@@ -3,7 +3,7 @@ const link = "mailto:yncyncy0@gmail.com";
 </script>
 
 <template>
-  <a :href="link">
+  <a :href="link" target="_blank">
     <Button 
       aria-label="Hire Me button (I use Neovim btw!)" 
       class="dark:bg-ctp-green-200 bg-cat-text text-cat-base w-full max-w-screen hover:bg-cat-text text-md">

@@ -21,7 +21,7 @@ const items: Socials[] = [
 <template>
   <ul class="flex flex-row gap-7">
     <li v-for="(item, index) in items" :key="index">
-      <a :href="item.link" :aria-label="item.aria">
+      <a :href="item.link" :aria-label="item.aria" target="_blank">
         <Icon :name="item.icon" class="size-6"/>
       </a>
     </li>

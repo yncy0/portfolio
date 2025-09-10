@@ -20,13 +20,13 @@ const props = defineProps<Projects>();
 
     <CardFooter class="flex flex-row gap-5">
       <Button aria-label="Link to Project" class="dark:bg-ctp-green-200 bg-cat-text text-cat-base p-5">
-        <a :href="props.projectUrl">View Project</a>
+        <a :href="props.projectUrl" target="_blank">View Project</a>
       </Button>
       <Button
         aria-label="Link to GitHub"
         class="bg-cat-base dark:text-ctp-green-200 text-cat-text 
               dark:border-ctp-green-200 border-cat-text border shadow-none p-5 items-center">
-        <a :href="props.githubUrl" class="flex flex-row items-center gap-2">
+        <a :href="props.githubUrl" target="_blank" class="flex flex-row items-center gap-2">
           <Icon name="simple-icons:github" class="size-4" />
           GitHub
         </a>
