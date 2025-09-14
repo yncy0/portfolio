@@ -28,6 +28,10 @@ export default defineNuxtConfig({
           name: "description",
           content: "Just a simple Portfolio website built using Nuxt",
         },
+        {
+          name: "author",
+          content: "Yncy0"
+        }
       ],
     },
   },
