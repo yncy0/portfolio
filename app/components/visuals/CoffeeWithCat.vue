@@ -94,5 +94,5 @@ function onWindowResize() {
 </script>
 
 <template>
-  <div ref="container" class="w-full lg:w-1/2 max-w-screen h-[480px] lg:h-dvh relative"/>
+  <div ref="container" class="w-full xl:w-1/2 max-w-screen h-[480px] lg:h-dvh relative"/>
 </template>
