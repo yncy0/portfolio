@@ -2,9 +2,6 @@
 
 A simple personal portfolio website built using Vue, Tailwind, Shadcn, and ThreeJS. Modern website with responsive layout
 
->[!NOTE]
->This portfolio will be archived due to another portfolio being made for improvements
-
 ## Tech Stack
 - [Nuxt](https://nuxt.com/): A modern meta framework for Vue.
 - [Tailwind](https://tailwindcss.com/): Utility-first CSS tool for faster development.
