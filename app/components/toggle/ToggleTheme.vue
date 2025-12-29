@@ -9,7 +9,7 @@ const toggleDark = useToggle(isDark);
 <template>
   <Button
     aria-label="Toggle Theme Button"
-    class="bg-cat-base dark:text-ctp-green-200 text-cat-text dark:border-ctp-green-200 border-cat-text border hover:bg-gruv-bg-hard"
+    class="bg-base-500 dark:text-ctp-green-200 text-fg-500 dark:border-ctp-green-200 border-fg-500 border hover:bg-base-500"
     @click="toggleDark()"
   >
     <div v-if="isDark">

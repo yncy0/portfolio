@@ -12,9 +12,9 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/scripts",
     "@nuxt/test-utils",
-    "shadcn-nuxt",
     "@nuxthub/core",
     "@nuxt/icon",
+    "@nuxt/ui"
   ],
 
   app: {

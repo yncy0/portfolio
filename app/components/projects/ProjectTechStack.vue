@@ -5,9 +5,9 @@ const props = defineProps<{ lists: Technologies[] }>();
 <template>
   <div class="flex flex-wrap gap-1">
     <div v-for="(item, index) in props.lists" :key="index">
-      <Badge class="bg-cat-text text-cat-base rounded-md">
+      <UBadge class="bg-fg-500 text-base-500 rounded-md">
         <Icon :name="item.icon" :class="item.color"/>{{ item.name }}
-      </Badge>
+      </UBadge>
     </div>
   </div>
 </template>
