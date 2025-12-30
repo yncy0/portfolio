@@ -132,3 +132,36 @@ export const monthsaryTechStack: Technologies[] = [
     color: "text-ctp-green-300"
   },
 ];
+
+export const roomieTechStack: Technologies[] = [
+  {
+    name: "Vue",
+    icon: "simple-icons:vuedotjs",
+    size: 12,
+    color: "text-ctp-green-300"
+  },
+  {
+    name: "Nuxt",
+    icon: "simple-icons:nuxt",
+    size: 12,
+    color: "text-ctp-green-300"
+  },
+  {
+    name: "TailwindCSS",
+    icon: "simple-icons:tailwindcss",
+    size: 12,
+    color: "text-ctp-sky-300"
+  },
+  {
+    name: "TypeScript",
+    icon: "simple-icons:typescript",
+    size: 12,
+    color: "text-ctp-blue-300"
+  },
+  {
+    name: "Golang",
+    icon: "simple-icons:go",
+    size: 12,
+    color: "text-ctp-green-300"
+  },
+];

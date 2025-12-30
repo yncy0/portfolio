@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps<{ lists: Technologies[] }>();
+const props = defineProps<{ lists: Technologies[] | undefined }>();
 </script>
 
 <template>

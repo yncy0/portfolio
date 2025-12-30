@@ -41,11 +41,6 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
-  shadcn: {
-    prefix: "",
-    componentDir: "./app/components/ui",
-  },
-
   components: [
     {
       path: "~/components",
