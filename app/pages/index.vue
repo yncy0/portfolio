@@ -1,10 +1,10 @@
 <template>
-  <main class="flex flex-col items-start justify-center w-full max-w-screen gap-10">
+  <main class="flex flex-col items-start justify-center w-full max-w-screen gap-11">
     <HeroSection />
     <AboutMeSection class="pt-20 lg:pt-0"/>
     <ExperienceSection />
     <ProjectSection />
-    <TechnologySection />
+    <TechStackSection />
     <EducationSection />
 
     <HireMeButton />

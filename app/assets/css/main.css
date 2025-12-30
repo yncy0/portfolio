@@ -19,6 +19,27 @@
 
   --font-fira-code: "Fira Code", monospace;
   --font-fira-sans: "Fira Sans", sans-serif;
+
+  --color-icon-html: #E34F26;
+  --color-icon-css: #663399;
+  --color-icon-js: #F7DF1E;
+  --color-icon-ts: #3178C6;
+  --color-icon-go: #00ADD8;
+  --color-icon-node: #5FA04E;
+  --color-icon-vue: #4FC08D;
+  --color-icon-nuxt: #00DC82;
+  --color-icon-react: #61DAFB;
+  --color-icon-tailwind: #06B6D4;
+  --color-icon-psql: #4169E1;
+  --color-icon-sneklang: #3776AB;
+  --color-icon-git: #F05032;
+  --color-icon-docker: #2496ED;
+  --color-icon-neovim: #57A143;
+  --color-icon-godot: #478CBF;
+  --color-icon-supabase: #3FCF8E;
+  --color-icon-fedora: #51A2DA;
+  --color-icon-linux: #FCC624;
+  --color-icon-pinia: #FFD859;
 }
 
 .dark {
