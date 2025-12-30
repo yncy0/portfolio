@@ -5,7 +5,7 @@
       <h3 class="text-md lg:text-lg dark:text-ctp-green-200">Main Stack</h3>
       <MainStackList :lists="mainStackList" />
     </div>
-    <div class="flex flex-col gap-9">
+    <div class="flex flex-col gap-5">
       <h3 class="text-md lg:text-lg dark:text-ctp-green-200">Others</h3>
       <TechStackList :lists="techStackList"/>      
     </div>
