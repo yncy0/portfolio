@@ -1,12 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 @import "tailwindcss";
 @import "@nuxt/ui";
 @import "tw-animate-css";
 @import "@catppuccin/tailwindcss/mocha.css";
 
 @custom-variant dark (&:is(.dark *));
-
 
 @theme {
   --color-base-500: #faf4ed;
@@ -16,9 +13,6 @@
   --color-fg-500: #575279;
   --color-fg-400: #797593;
   --color-fg-300: #9893a5;
-
-  --font-fira-code: "Fira Code", monospace;
-  --font-fira-sans: "Fira Sans", sans-serif;
 
   --color-icon-html: #E34F26;
   --color-icon-css: #663399;
@@ -40,6 +34,9 @@
   --color-icon-fedora: #51A2DA;
   --color-icon-linux: #FCC624;
   --color-icon-pinia: #FFD859;
+
+  --font-silk-screen: 'Silkscreen', monospace;
+
 }
 
 .dark {
@@ -72,7 +69,7 @@ h4,
 h5,
 h6,
 strong {
-  font-family: var(--font-fira-code);
+  font-family: 'Silkscreen', monospace;
   font-weight: bold;
 }
 
@@ -84,9 +81,9 @@ body {
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
-  font-family: var(--font-fira-sans);
+  font-family: 'Poppins', monospace;
   font-size: 15px;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* text-rendering: optimizeLegibility; */
+  /* -webkit-font-smoothing: antialiased; */
+  /* -moz-osx-font-smoothing: grayscale; */
 }

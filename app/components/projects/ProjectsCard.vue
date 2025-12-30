@@ -47,7 +47,7 @@ onMounted(() => {
           target="_blank"
           :disabled="isDisabled"
           color="neutral"
-          class="dark:bg-ctp-green-200 bg-base-500 text-fg-500 hover:bg-base-500 border border-fg-500 dark:border-ctp-green-200"/>
+          class="dark:bg-ctp-green-200 bg-base-500 text-fg-500 hover:bg-base-500 border border-fg-500 dark:border-ctp-green-200 font-silk-screen"/>
         <UButton
           aria-label="Link to GitHub"
           icon="simple-icons:github"
@@ -56,7 +56,7 @@ onMounted(() => {
           target="_blank"
           :disabled="isDisabled"
           color="neutral"
-          class="bg-base-500 dark:text-ctp-green-200 text-fg-500 dark:border-ctp-green-200 border-fg-500 border items-center hover:bg-base-500"/>
+          class="bg-base-500 dark:text-ctp-green-200 text-fg-500 dark:border-ctp-green-200 border-fg-500 border items-center hover:bg-base-500 font-silk-screen"/>
       </div>
     </template>
   </UCard>

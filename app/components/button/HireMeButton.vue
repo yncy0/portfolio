@@ -9,5 +9,5 @@ const link = "mailto:yncyncy0@gmail.com";
       label="Hire me I use Neovim btw!"
       :to="link"
       target="_blank"
-      class="dark:bg-ctp-green-200 bg-fg-500 text-base-500 w-full max-w-screen hover:bg-fg-500 text-md"/>
+      class="dark:bg-ctp-green-200 bg-fg-500 text-base-500 w-full max-w-screen hover:bg-fg-500 text-md font-silk-screen"/>
 </template>
