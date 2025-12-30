@@ -15,6 +15,16 @@ const items: Socials[] = [
     icon: "simple-icons:x",
     aria: "Link to X"
   },
+  {
+    link: "https://www.linkedin.com/in/yancy-paala",
+    icon: "simple-icons:linkedin",
+    aria: "Link to Linkedin"
+  },
+  {
+    link: "https://discord.com/users/892331973132038174",
+    icon: "simple-icons:discord",
+    aria: "Link to Discord"
+  },
 ];
 </script>
 
