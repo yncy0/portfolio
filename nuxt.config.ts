@@ -52,4 +52,10 @@ export default defineNuxtConfig({
     mode: "css",
     cssLayer: "base",
   },
+
+  nitro: {
+    prerender: {
+      autoSubfolderIndex: false
+    }
+  }
 });
