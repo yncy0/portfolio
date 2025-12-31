@@ -19,18 +19,18 @@ const projects: Projects[] = [
     description:
       "A fun project dedicated to my girlfriend❤️. " +
       "It has a basic authentication features from Supabase and form validation using Zod",
-    githubUrl: "https://github.com/yncy0/monthsary",
+    githubUrl: "https://github.com/yncynotdev/monthsary",
     imageUrl: monthsary,
-    projectUrl: "https://monthsary-website.nuxt.dev/",
+    projectUrl: "",
     techstack: monthsaryTechStack,
   },
   {
     title: "Portfolio",
     description:
-      "This project is to showcase my other projects and skills. Currently deplyed in NuxtHub.",
-    githubUrl: "https://github.com/yncy0/portfolio",
+      "This project is to showcase my other projects and skills. Currently deployed in Vercel, can you find the easter egg??.",
+    githubUrl: "https://github.com/yncynotdev/portfolio",
     imageUrl: portfolio,
-    projectUrl: "https://yncy0.nuxt.dev/",
+    projectUrl: "https://yncynotdev.nuxt.dev/",
     techstack: portfolioTechStack,
   },
   {

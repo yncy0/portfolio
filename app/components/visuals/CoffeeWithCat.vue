@@ -6,8 +6,6 @@ import { GLTFLoader } from "three/examples/jsm/Addons.js";
 
 import degreeToRadians from "@/utils/degreeToRadians";
 
-let INTERSECTED;
-
 const container = ref(null);
 const isClickable = ref(false);
 
@@ -70,9 +68,9 @@ function init() {
 
   loadGLTF();
 
-  window.addEventListener("pointermove", onPointerMove, { passive: true });
-  document.addEventListener("click", onClick);
-  document.addEventListener("touchstart", onTouchStart);
+  renderer.domElement.addEventListener("pointermove", onPointerMove, { passive: true });
+  renderer.domElement.addEventListener("click", onClick);
+  renderer.domElement.addEventListener("touchstart", onTouchStart);
 }
 
 function loadGLTF() {
@@ -105,19 +103,12 @@ function loadGLTF() {
 function animate() {
   const mixerUpdateDelta = clock.getDelta();
 
-  mixer.update(mixerUpdateDelta);
-
   raycaster.setFromCamera(pointer, camera);
   const intersection = raycaster.intersectObjects([mesh], true);
-  if (intersection.length > 0) {
-    if (INTERSECTED != intersection[0].object) {
-      INTERSECTED = intersection[0].object;
-      isClickable.value = true;
-    }
-  } else {
-    INTERSECTED = null;
-    isClickable.value = false;
-  }
+
+  isClickable.value = intersection.length > 0;
+
+  mixer.update(mixerUpdateDelta);
 
   renderer.render(scene, camera);
 }
@@ -166,5 +157,5 @@ function onTouchStart() {
 </script>
 
 <template>
-  <div ref="container" class="w-full xl:w-1/2 max-w-screen h-dvh relative" />
+  <div ref="container" class="w-full xl:w-1/2 max-w-screen h-dvh" />
 </template>
