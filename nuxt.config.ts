@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     "@nuxt/test-utils",
     "@nuxthub/core",
     "@nuxt/icon",
-    "@nuxt/ui"
+    "@nuxt/ui",
   ],
 
   app: {
@@ -30,8 +30,8 @@ export default defineNuxtConfig({
         },
         {
           name: "author",
-          content: "Yncy0"
-        }
+          content: "Yncy0",
+        },
       ],
     },
   },
@@ -55,13 +55,11 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      autoSubfolderIndex: false
-    }
+      autoSubfolderIndex: false,
+    },
   },
 
   routeRules: {
-    '/examples/*': { redirect: '/redirect-route' },
-    '/modify-headers-route': { headers: { 'x-magic-of': 'nuxt and vercel' } },
-    '/spa': { ssr: false },
-  }
+    "/": { prerender: true },
+  },
 });
