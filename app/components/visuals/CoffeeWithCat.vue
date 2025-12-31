@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { onMounted, nextTick, ref } from "vue";
 import { useResizeObserver } from "@vueuse/core";
 import * as THREE from "three";
@@ -6,23 +6,28 @@ import { GLTFLoader } from "three/examples/jsm/Addons.js";
 
 import degreeToRadians from "@/utils/degreeToRadians";
 
-let camera: THREE.OrthographicCamera;
-let scene: THREE.Scene;
-let renderer: THREE.WebGLRenderer;
+let INTERSECTED;
 
-let ambientLight: THREE.AmbientLight;
-let directionalLight: THREE.DirectionalLight;
+const container = ref(null);
+const isClickable = ref(false);
 
-let mixer: THREE.AnimationMixer;
-const clock: THREE.Clock = new THREE.Clock();
+const clock = new THREE.Clock();
 
-const container = ref<HTMLElement | null>(null);
+let camera, scene, renderer;
+
+let ambientLight, directionalLight;
+
+let mesh, mixer;
+
+const raycaster = new THREE.Raycaster();
+const pointer = new THREE.Vector2();
 
 // stands for dimension
 const d = 9;
 
 onMounted(async () => {
   await nextTick();
+
   init();
 });
 
@@ -64,15 +69,19 @@ function init() {
   container.value.appendChild(renderer.domElement);
 
   loadGLTF();
+
+  window.addEventListener("pointermove", onPointerMove, { passive: true });
+  document.addEventListener("click", onClick);
+  document.addEventListener("touchstart", onTouchStart);
 }
 
 function loadGLTF() {
   const gltfLoader = new GLTFLoader();
 
-  const url: string = "/models/coffee_with_cat.glb";
+  const url = "/models/coffee_with_cat.glb";
 
   gltfLoader.load(url, (gltf) => {
-    const mesh = gltf.scene;
+    mesh = gltf.scene;
     mesh.rotation.set(
       degreeToRadians(0),
       degreeToRadians(90),
@@ -98,6 +107,18 @@ function animate() {
 
   mixer.update(mixerUpdateDelta);
 
+  raycaster.setFromCamera(pointer, camera);
+  const intersection = raycaster.intersectObjects([mesh], true);
+  if (intersection.length > 0) {
+    if (INTERSECTED != intersection[0].object) {
+      INTERSECTED = intersection[0].object;
+      isClickable.value = true;
+    }
+  } else {
+    INTERSECTED = null;
+    isClickable.value = false;
+  }
+
   renderer.render(scene, camera);
 }
 
@@ -114,6 +135,33 @@ function onWindowResize() {
   camera.updateProjectionMatrix();
 
   renderer.setSize(width, height);
+}
+
+function onPointerMove(event) {
+  const rect = renderer.domElement.getBoundingClientRect();
+
+  pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+  pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+}
+
+function onClick() {
+  if (!isClickable.value) return;
+  return navigateTo("https://buymeacoffee.com/yncy0", {
+    external: true,
+    open: {
+      target: "_blank",
+    },
+  });
+}
+
+function onTouchStart() {
+  if (!isClickable.value) return;
+  return navigateTo("https://buymeacoffee.com/yncy0", {
+    external: true,
+    open: {
+      target: "_blank",
+    },
+  });
 }
 </script>
 
