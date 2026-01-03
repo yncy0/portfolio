@@ -11,6 +11,7 @@ export type Education = {
 export type Projects = {
   title: string;
   description: string;
+  images?: string[];
   imageUrl?: string;
   githubUrl?: string;
   projectUrl?: string;

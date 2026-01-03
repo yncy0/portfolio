@@ -3,7 +3,7 @@
     <HeroSection />
     <AboutMeSection class="pt-20 lg:pt-0"/>
     <ExperienceSection />
-    <ProjectSection />
+    <ProjectsSection />
     <TechStackSection />
     <EducationSection />
 

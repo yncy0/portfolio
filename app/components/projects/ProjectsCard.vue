@@ -2,31 +2,21 @@
 import type { Projects } from "~/utils/types";
 
 const props = defineProps<Projects>();
-const isGitHubUrlDisabled = ref<boolean>(false);
-const isProjectUrlDisabled = ref<boolean>(false);
 const isEmptyImage = ref<boolean>(false);
 
 onMounted(() => {
-  if (props.githubUrl === "") {
-    isGitHubUrlDisabled.value = true
-  }
-
-  if (props.projectUrl === "") {
-    isProjectUrlDisabled.value = true
-  }
-
   if (props.imageUrl === "") {
-    isEmptyImage.value = true
+    isEmptyImage.value = true;
   }
-})
+});
 </script>
 
 <template>
   <UCard
     variant="subtle"
-    :ui="{header: 'border-none', footer: 'border-fg-500', body: 'flex-1'}"
-    class="h-full flex flex-col bg-base-500 text-fg-500 border dark:border-ctp-green-200 border-fg-500 rounded-sm">
-
+    :ui="{ header: 'border-none', footer: 'border-fg-500', body: 'flex-1' }"
+    class="h-full flex flex-col bg-base-500 text-fg-500 border dark:border-ctp-green-200 border-fg-500 rounded-sm"
+  >
     <template #header>
       <h3>{{ props.title }}</h3>
       <p>{{ props.description }}</p>
@@ -39,30 +29,20 @@ onMounted(() => {
       <div v-else>
         <GreenCat />
       </div>
-      <ProjectTechStack :lists="props.techstack" />
+      <ProjectsLink
+        :project-url="props.projectUrl"
+        :github-url="props.githubUrl"
+      />
+      <ProjectsTechStack :lists="props.techstack" />
     </div>
 
     <template #footer>
-      <div class="flex flex-col lg:flex-row gap-5">
-        <UButton 
-          aria-label="Link to Project" 
-          icon="i-lucide-link"
-          label="View Project"
-          :to="props.projectUrl"
-          target="_blank"
-          :disabled="isProjectUrlDisabled"
-          color="neutral"
-          class="dark:bg-ctp-green-200 bg-base-500 text-fg-500 hover:bg-base-500 border border-fg-500 dark:border-ctp-green-200 font-silk-screen"/>
-        <UButton
-          aria-label="Link to GitHub"
-          icon="simple-icons:github"
-          label="GitHub"
-          :to="props.githubUrl"
-          target="_blank"
-          :disabled="isGitHubUrlDisabled"
-          color="neutral"
-          class="bg-base-500 dark:text-ctp-green-200 text-fg-500 dark:border-ctp-green-200 border-fg-500 border items-center hover:bg-base-500 font-silk-screen"/>
-      </div>
+      <LazyProjectsModal
+        :title="props.title"
+        :description="props.description"
+        :images="props.images"
+        :techstack="props.techstack"
+      />
     </template>
   </UCard>
 </template>
