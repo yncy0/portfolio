@@ -32,7 +32,7 @@ const items: Socials[] = [
   <ul class="flex flex-row gap-7">
     <li v-for="(item, index) in items" :key="index">
       <a :href="item.link" :aria-label="item.aria" target="_blank">
-        <Icon :name="item.icon" class="size-6"/>
+        <Icon :name="item.icon" class="size-5 md:size-6"/>
       </a>
     </li>
   </ul>

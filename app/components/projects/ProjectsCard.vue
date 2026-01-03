@@ -2,12 +2,17 @@
 import type { Projects } from "~/utils/types";
 
 const props = defineProps<Projects>();
-const isDisabled = ref<boolean>(false);
+const isGitHubUrlDisabled = ref<boolean>(false);
+const isProjectUrlDisabled = ref<boolean>(false);
 const isEmptyImage = ref<boolean>(false);
 
 onMounted(() => {
-  if (props.githubUrl === "" || props.projectUrl === "") {
-    isDisabled.value = true
+  if (props.githubUrl === "") {
+    isGitHubUrlDisabled.value = true
+  }
+
+  if (props.projectUrl === "") {
+    isProjectUrlDisabled.value = true
   }
 
   if (props.imageUrl === "") {
@@ -24,7 +29,7 @@ onMounted(() => {
 
     <template #header>
       <h3>{{ props.title }}</h3>
-      <p class="text-cat-text">{{ props.description }}</p>
+      <p>{{ props.description }}</p>
     </template>
 
     <div class="flex flex-col gap-5">
@@ -38,14 +43,14 @@ onMounted(() => {
     </div>
 
     <template #footer>
-      <div class="flex flex-row gap-5">
+      <div class="flex flex-col lg:flex-row gap-5">
         <UButton 
           aria-label="Link to Project" 
           icon="i-lucide-link"
           label="View Project"
           :to="props.projectUrl"
           target="_blank"
-          :disabled="isDisabled"
+          :disabled="isProjectUrlDisabled"
           color="neutral"
           class="dark:bg-ctp-green-200 bg-base-500 text-fg-500 hover:bg-base-500 border border-fg-500 dark:border-ctp-green-200 font-silk-screen"/>
         <UButton
@@ -54,7 +59,7 @@ onMounted(() => {
           label="GitHub"
           :to="props.githubUrl"
           target="_blank"
-          :disabled="isDisabled"
+          :disabled="isGitHubUrlDisabled"
           color="neutral"
           class="bg-base-500 dark:text-ctp-green-200 text-fg-500 dark:border-ctp-green-200 border-fg-500 border items-center hover:bg-base-500 font-silk-screen"/>
       </div>

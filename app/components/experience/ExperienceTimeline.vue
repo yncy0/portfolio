@@ -16,6 +16,6 @@ const active = ref(1);
 </script>
 
 <template>
-  <UTimeline v-model="active" :items="items" />
+  <UTimeline v-model="active" :items="items" color="neutral" />
 </template>
 

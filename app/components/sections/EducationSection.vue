@@ -3,7 +3,7 @@ const education: Education[] = [
   {
     school: "La Consolacion University Philippines",
     course: "Bachelor of Science in Information Technology",
-    year: "Undergrad",
+    year: "Expected Year - 2026",
   },
   {
     school: "La Consolacion University Philippines",
@@ -23,7 +23,7 @@ const education: Education[] = [
           <div>
             <h3 class="dark:text-ctp-green-200">{{ item.school }}</h3>
             <pre class="whitespace-normal">{{ item.course }}</pre>
-            <em>{{ item.year }}</em>
+            <em class="text-fg-400">{{ item.year }}</em>
           </div>
         </li>
       </ul>
