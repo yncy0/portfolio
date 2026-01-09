@@ -19,7 +19,7 @@ const projects: Projects[] = [
     title: "ROOMIE (WIP)",
     description:
       "ROOMIE is a room availability and management system designed for efficient room organization. " +
-      "This project is currently made in React and Supabase. Slowly migrating into Nuxt and Golang.",
+      "This project is currently made in React and Supabase. SLOWLY migrating into Nuxt and Golang.",
     githubUrl: "",
     images: [roomie, roomie1, roomie2, roomie3],
     imageUrl: roomie,
@@ -30,11 +30,12 @@ const projects: Projects[] = [
     title: "Monthsary Website",
     description:
       "A fun project dedicated to my girlfriend❤️. " +
-      "It has a basic authentication features from Supabase and form validation using Zod",
+      "It has a basic authentication features from Supabase and form validation using Zod." +
+      "Temporarily deployed in Vercel, but I'm taking a time to host it in a better hosting solutions.",
     githubUrl: "https://github.com/yncynotdev/monthsary",
     images: [monthsary, monthsary1, monthsary2, monthsary3, monthsary4, monthsary5],
     imageUrl: monthsary,
-    projectUrl: "",
+    projectUrl: "https://monthsary-web.vercel.app/",
     techstack: monthsaryTechStack,
   },
   {
