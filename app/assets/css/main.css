@@ -14,29 +14,28 @@
   --color-fg-400: #797593;
   --color-fg-300: #9893a5;
 
-  --color-icon-html: #E34F26;
+  --color-icon-html: #e34f26;
   --color-icon-css: #663399;
-  --color-icon-js: #F7DF1E;
-  --color-icon-ts: #3178C6;
-  --color-icon-go: #00ADD8;
-  --color-icon-node: #5FA04E;
-  --color-icon-vue: #4FC08D;
-  --color-icon-nuxt: #00DC82;
-  --color-icon-react: #61DAFB;
-  --color-icon-tailwind: #06B6D4;
-  --color-icon-psql: #4169E1;
-  --color-icon-sneklang: #3776AB;
-  --color-icon-git: #F05032;
-  --color-icon-docker: #2496ED;
-  --color-icon-neovim: #57A143;
-  --color-icon-godot: #478CBF;
-  --color-icon-supabase: #3FCF8E;
-  --color-icon-fedora: #51A2DA;
-  --color-icon-linux: #FCC624;
-  --color-icon-pinia: #FFD859;
+  --color-icon-js: #f7df1e;
+  --color-icon-ts: #3178c6;
+  --color-icon-go: #00add8;
+  --color-icon-node: #5fa04e;
+  --color-icon-vue: #4fc08d;
+  --color-icon-nuxt: #00dc82;
+  --color-icon-react: #61dafb;
+  --color-icon-tailwind: #06b6d4;
+  --color-icon-psql: #4169e1;
+  --color-icon-sneklang: #3776ab;
+  --color-icon-git: #f05032;
+  --color-icon-docker: #2496ed;
+  --color-icon-neovim: #57a143;
+  --color-icon-godot: #478cbf;
+  --color-icon-supabase: #3fcf8e;
+  --color-icon-fedora: #51a2da;
+  --color-icon-linux: #fcc624;
+  --color-icon-pinia: #ffd859;
 
-  --font-silk-screen: 'Silkscreen', monospace;
-
+  --font-silk-screen: "Silkscreen", monospace;
 }
 
 .dark {
@@ -69,8 +68,14 @@ h4,
 h5,
 h6,
 strong {
-  font-family: 'Silkscreen', monospace;
+  font-family: "Silkscreen", monospace;
   font-weight: bold;
+}
+
+a,
+p,
+button {
+  font-size: 0.9rem;
 }
 
 body {
@@ -81,9 +86,21 @@ body {
     color 0.5s,
     background-color 0.5s;
   line-height: 1.6;
-  font-family: 'Poppins', monospace;
-  font-size: 15px;
-  /* text-rendering: optimizeLegibility; */
-  /* -webkit-font-smoothing: antialiased; */
-  /* -moz-osx-font-smoothing: grayscale; */
+  font-family: "Poppins", monospace;
+  font-size: 0.9rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (min-width: 601px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  a,
+  p,
+  button {
+    font-size: 1rem;
+  }
 }
