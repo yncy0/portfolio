@@ -6,10 +6,10 @@
       >Web Developer</UBadge
     >
     <UBadge class="text-md bg-gradient-to-r from-ctp-green-200 to-ctp-teal-200 text-black"
-      >Vue/Nuxt Developer</UBadge
+      >Vue/React Developer</UBadge
     >
     <UBadge class="text-md bg-gradient-to-r from-ctp-blue-200 to-ctp-sapphire-200 text-black"
-      >Golang Developer</UBadge
+      >Go/Python Developer</UBadge
     >
   </div>
 </template>

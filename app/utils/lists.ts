@@ -19,16 +19,16 @@ export const mainStackList: Technologies[] = [
     color: "text-icon-nuxt"
   },
   {
+    name: "Python",
+    icon: "simple-icons:python",
+    size: 32,
+    color: "text-icon-sneklang"
+  },
+  {
     name: "Golang",
     icon: "simple-icons:go",
     size: 36,
     color: "text-icon-go"
-  },
-  {
-    name: "TypeScript",
-    icon: "simple-icons:typescript",
-    size: 36,
-    color: "text-icon-ts"
   },
   {
     name: "Postgres",
@@ -82,6 +82,12 @@ export const techStackList: Technologies[] = [
     color: "text-icon-js"
   },
   {
+    name: "TypeScript",
+    icon: "simple-icons:typescript",
+    size: 36,
+    color: "text-icon-ts"
+  },
+  {
     name: "React",
     icon: "simple-icons:react",
     size: 32,
@@ -118,10 +124,10 @@ export const techStackList: Technologies[] = [
     color: "text-icon-bun"
   },
   {
-    name: "Sneklang",
-    icon: "simple-icons:python",
+    name: "FastAPI",
+    icon: "simple-icons:fastapi",
     size: 32,
-    color: "text-icon-sneklang"
+    color: "text-icon-fastapi"
   },
   {
     name: "Godot",
@@ -150,6 +156,12 @@ export const techStackList: Technologies[] = [
   {
     name: "GitHub",
     icon: "simple-icons:github",
+    size: 32,
+    color: "text-fg-500"
+  },
+  {
+    name: "BetterAuth",
+    icon: "simple-icons:betterauth",
     size: 32,
     color: "text-fg-500"
   },
